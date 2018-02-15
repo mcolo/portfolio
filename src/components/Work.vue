@@ -21,7 +21,7 @@
 							'My favorite aspect of the site is the team section profile pictures. Each band member has a cheesy corporate photo that upon hover reveals a shot of them on stage. I really wanted to recreate this effect on mobile and came up with the idea to trigger the reveal based on the scroll position. I\'m thrilled with how it and the rest of the site came out!'
 						],
 						contributions: ['design', 'development'],
-						imgPath: 'static/steam-sample-img.png',
+						imgPath: '/static/steam-sample-img.png',
 						link: {
 							url: 'https://mcolo.github.io/msu',
 							title: 'Mobile Steam Unit Website'
@@ -34,7 +34,7 @@
 							'A small part of inspiration came from antiquated cult sites like Heavens Gate, Angels Light and others that spew tons of information and pictures without any semblance of coherence. While there isn\'t a ton of content and there is some structure we decided that the random waveform graphs and bizarre text & imagery would be powerful enough.'
 						],
 						contributions: ['design', 'development'],
-						imgPath: '',
+						imgPath: '/static/ssp-sample-img.png',
 						link: {
 							url: 'http://sweetsynthprince.com/',
 							title: 'Sweet Synth Prince Website'
@@ -46,9 +46,9 @@
 							'This website was made for the wedding of my brother and his wife. They had searched for a simple wedding template on various CMS services but found them all to be too tacky and flashy for their taste. Since it was a destination wedding there was a lot of information about both the venue and the country that they wanted to share. All of this in combination with the likelihood that most guests would be browsing the site on a mobile device while on their visit led me create a very simple layout that was easy to navigate.'
 						],
 						contributions: ['design', 'development'],
-						imgPath: '',
+						imgPath: '/static/ms-sample-img.png',
 						link: {
-							url: 'http://michaelandsophia.com',
+							url: 'https://mcolo.github.io/ms-wedding',
 							title: 'Michael & Sophia\'s Wedding Website'
 						}
 					},

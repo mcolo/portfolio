@@ -30,7 +30,8 @@
 
 		.sample__content{
 			box-sizing: border-box;
-			flex: 2;
+			flex: 1;
+			min-width: 45%;
 		}
 
 		.sample__img {
