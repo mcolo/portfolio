@@ -4,7 +4,7 @@
     <p class="about__answer">I'm Max Miracolo, a Frontend Developer &amp; UI Designer based in New York City.</p>
     <p class="about__answer">Over the past 6 years I've spent most of my time at two companies; a fast-paced startup called Assured Labor, and Macy's as an in-house permanent freelancer on their dev team.</p>
     <p class="about__answer">I've worked with frontend technologies like <span class="about__highlight">Handlebars</span> <span class="about__highlight">VueJS 2</span> <span class="about__highlight">React</span> <span class="about__highlight">Angular 1.x</span> <span class="about__highlight">Bootstrap</span> am proficient in languages like <span class="about__highlight">Javascript</span> <span class="about__highlight">HTML</span> <span class="about__highlight">CSS/SASS/LESS</span> and frequently use applications/services like <span class="about__highlight">Photoshop</span> <span class="about__highlight">Git</span> <span class="about__highlight">Sublime</span> and <span class="about__highlight">JIRA</span>.</p>
-    <p class="about__answer"> For more information, take a look at <a class="about__link" href="http://maxmiracolo.com/src/images/MaxMiracolo-Resume.pdf" target="_blank">my resume</a></p>
+    <p class="about__answer"> For more information, take a look at <a class="about__link" href="http://maxmiracolo.com/MaxMiracolo-Resume.pdf" target="_blank">my resume</a></p>
     <!-- <h2 class="about__question">What do I do outside of work?</h2> -->
     <p class="about__answer">Outside of work, some of my hobbies include video editing, photography, drawing, puzzles & board games, soccer, biking, and learning new skills (I've taken courses in woodworking, drawing &amp; painting, and ceramics to name a few).</p>
 
@@ -38,7 +38,6 @@
   /////////////////////////////////////////
   .about {
     box-sizing: border-box;
-    margin: 0 auto;
     max-width: 800px;
     min-width: 300px;
     padding: 0 40px;
@@ -133,12 +132,20 @@
   //  MEDIA QUERIES
   /////////////////////////////////////////
   @media (min-width: 768px) {
+    .about {
+      margin: 0 auto;
+    }
+
     .about__question {
       padding: 100px 0 0;
     }
   }
 
   @media (max-width: 767px) {
+    .about {
+      margin: 0 auto 50px;
+    }
+
     .about__question {
       padding: 40px 0 0;
     }

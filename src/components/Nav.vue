@@ -97,10 +97,6 @@
       }
 
       .nav__link {
-        font-size: 36px;
-        line-height: 50px;
-        margin: 0 0 0 10px;
-        position: relative;
 
         &::before {
           background-color: #fff;
@@ -124,6 +120,24 @@
         }
       }
 
+    }
+  }
+
+  @media (min-width: 350px) and (max-width: 767px) {
+    .nav .nav__link {
+      font-size: 36px;
+      line-height: 50px;
+      margin: 0 0 0 10px;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .nav .nav__link {
+      font-size: 24px;
+      line-height: 50px;
+      margin: 0 0 0 15px;
+      position: relative;
     }
   }
 

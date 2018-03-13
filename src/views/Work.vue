@@ -27,7 +27,7 @@
               phone: 'https://res.cloudinary.com/ddkucvkg0/image/upload/v1520650214/portfolio/steam-phone.jpg'
             },
             link: {
-              url: 'https://mcolo.github.io/msu',
+              url: 'http://mobilesteamunit.com',
               title: 'Mobile Steam Unit Website'
             }
           },

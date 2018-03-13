@@ -10,7 +10,7 @@
       <div class="link-group">
         <div><a class="footer__link" href="https://www.linkedin.com/in/maxmiracolo" target="_blank">LinkedIn</a></div>
         <div><a class="footer__link" href="mailto:max.miracolo@gmail.com" target="_blank">Email</a></div>
-        <div><a class="footer__link" href="" target="_blank">Resume</a></div>
+        <div><a class="footer__link" href="http://maxmiracolo.com/MaxMiracolo-Resume.pdf" target="_blank">Resume</a></div>
       </div>
       <div class="link-group">
         <div><a class="footer__link" href="https://codepen.io/mcolo" target="_blank">CodePen</a></div>
@@ -55,17 +55,10 @@
     top: -100%;
   }
 
-  .link-group {
-    display: inline-block;
-    margin: 0 70px 0 0;
-    vertical-align: top;
-  }
-
   .footer__link {
     color: $blue;
     display: inline-block;
     letter-spacing: 1px;
-    margin: 5px 0;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
@@ -106,12 +99,33 @@
   @media (min-width: 768px) {
     .footer {
       padding: 40px;
+      
+      .link-group {
+        display: inline-block;
+        margin: 0 70px 0 0;
+        vertical-align: top;
+
+        .footer__link {
+          margin: 5px 0;
+        }
+      }
     }
   }
 
   @media (max-width: 767px) {
     .footer {
       padding: 40px;
+
+      .link-group {
+        display: block;
+        text-align: center;
+
+        .footer__link {
+          font-size: 20px;
+          line-height: 1.1;
+          margin: 10px 0;
+        }
+      }
     }
   }
 </style>

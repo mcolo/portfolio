@@ -48,7 +48,7 @@
   /////////////////////////////////////////
   //  IMPORTS
   /////////////////////////////////////////
-  @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Lato:300|Hind');
+  @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Hind');
   @import './scss/normalize.scss';
   @import './scss/globals.scss';
 
