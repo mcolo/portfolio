@@ -1,0 +1,118 @@
+//colors
+$green: #2db69d; //#2db684;
+$blue: #0a9ddf;
+$red: #e67b75;
+$purple: #6e68bd;
+$copycolor: #59576f;
+
+//mixins
+@mixin border-radius($size) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  -ms-border-radius: $size;
+  border-radius: $size;
+}
+
+@mixin transition($properties) {
+  -webkit-transition: $properties;
+  -moz-transition: $properties;
+  -ms-transition: $properties;
+  transition: $properties;
+}
+
+@mixin transform($properties) {
+  -webkit-transform: $properties;
+  -moz-transform: $properties;
+  -ms-transform: $properties;
+  transform: $properties;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+
+//extendable classes
+.body-font {
+  font-family: 'Hind', sans-serif;
+}
+
+.heading-font {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.body-copy {
+  color: $copycolor;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+  margin: 1rem 0;
+  padding: 0;
+  @extend .body-font;
+}
+
+.heading-copy {
+  color: #333;
+  font-size: 42px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  @extend .heading-font;
+}
+
+.boxed-link {
+  color: $blue;
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 5px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 1;
+  @extend .heading-font;
+
+  &:hover{
+    color: #fff;
+    &::before {
+      top: -3px;
+    }
+  }
+
+  &::before {
+    background-color: $blue;
+    bottom: -3px;
+    content: '';
+    left: -5px;
+    right: -5px;
+    top: calc(100% + 1px);
+    position: absolute;
+    z-index: -1;
+    @include transition( 120ms cubic-bezier(.4, 1, .8, 1.2) );
+  }
+}
+
+//global styling
+@media (min-width: 768px) {
+  .child-page {
+    box-sizing: border-box;
+    min-height: calc(100vh - 60px);
+  }
+
+  .heading-copy {
+    letter-spacing: 1px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .child-page {
+    min-height: calc(100vh -  50px);
+  }
+}

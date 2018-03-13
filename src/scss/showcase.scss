@@ -1,0 +1,171 @@
+:root {
+  --showcase-width: 700px;
+}
+
+.showcase {
+  padding: 0 40px;
+  position: relative;
+  width: var(--showcase-width);
+}
+
+/////////////////////////////////////////
+//  BROWSER
+/////////////////////////////////////////
+.browser {
+  --browser-height: calc( var(--showcase-width) * .65 );
+  --searchbar-height: 20px;
+  --searchbar-spacing: calc( var(--searchbar-height) / 4 );
+  background: linear-gradient(to bottom right, #333, #222);
+  border-radius: 6px;
+  height: var(--browser-height);
+  left: calc( var(--showcase-width) * .025 );
+  overflow: hidden;
+  position: relative;
+  width: calc( var(--showcase-width) * .95 );
+}
+
+.browser::before {
+  /* searchbar */
+  background-color: #555;
+  border-radius: 3px;
+  content: "";
+  height: var(--searchbar-height);
+  left: 12.5%;
+  position: absolute;
+  top: var(--searchbar-spacing);
+  width: 80%;
+}
+
+.window {
+  height: calc( var(--browser-height) - var(--searchbar-height) - (var(--searchbar-spacing) * 2) );
+  left: 0;
+  position: absolute;
+  top: calc( var(--searchbar-height) + (var(--searchbar-spacing) * 2) );
+  width: 100%;
+}
+
+.display-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.browser__img {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.controls,
+.controls::before,
+.controls::after {
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.controls {
+  /* first circle */
+  background-color: #fe5f5e;
+  left: 10px;
+  top: 10px;
+}
+
+.controls::before,
+.controls::after {
+  content: "";
+  top: 0;
+}
+
+.controls::before {
+  /* second circle */
+  background-color: #ffbe50;
+  left: 15px;
+}
+
+.controls::after {
+  /* third circle */
+  background-color: #21ce5a;
+  left: 30px;
+}
+
+
+/////////////////////////////////////////
+//  PHONE
+/////////////////////////////////////////
+.phone {
+  --percentage: .48;
+  --phone-height: 360px;
+  --phone-width: calc(var(--phone-height) * var(--percentage));
+  --screen-width: calc( var(--phone-width) * .87);
+  --screen-height: calc( var(--phone-height) * .75);
+  background: linear-gradient(to bottom right, #333, #222);;
+  border-radius: calc( var(--phone-height) * .07 );
+  bottom: 2%;
+  // box-shadow: inset 5px 5px 15px rgba(255,255,255, .5), inset -5px -5px 10px rgba(0,0,0, .1);
+  height: var(--phone-height);
+  left: 0;
+  position: absolute;
+  width: var(--phone-width);
+}
+
+.screen {
+  height: var(--screen-height);
+  left: 6.5%;
+  position: absolute;
+  overflow: hidden;
+  top: 12.5%;
+  width: var(--screen-width);
+}
+
+.screen__img img {
+  border-radius: 4px;
+}
+
+.speaker {
+  --speaker-width: calc( var(--screen-width) * .28);
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  height: calc( var(--phone-height) * .01);
+  left: calc(50% - ( var(--speaker-width) / 2) );
+  position: absolute;
+  top: calc( var(--phone-height) * .0575 );
+  width: var(--speaker-width);
+}
+
+.home-button {
+  --button-size: calc( var(--phone-height) * .08 );
+  --button-bottom: calc( (var(--phone-height) * .0225) );
+  background-color: #1d1d1d;
+  border-radius: 50%;
+  bottom: var(--button-bottom);
+  height: var(--button-size);
+  left: calc(50% - (var(--button-size) / 2));
+  position: absolute;
+  width: var(--button-size);
+}
+
+// .screen::before {
+//   --speaker-width: calc( var(--screen-width) * .28);
+//   background-color: #b6b6b6;
+//   border-radius: 10px;
+//   content: "";
+//   height: calc( var(--phone-height) * .01);
+//   left: calc(50% - ( var(--speaker-width) / 2) );
+//   position: absolute;
+//   top: calc( var(--phone-height) * -.06 );
+//   width: var(--speaker-width);
+// }
+
+// .screen::after {
+//   --button-size: calc( var(--phone-height) * .08 );
+//   --button-bottom: calc( (var(--phone-height) * -.0225) - var(--button-size));
+//   background-color: #b6b6b6;
+//   border-radius: 50%;
+//   bottom: var(--button-bottom);
+//   content: "";
+//   height: var(--button-size);
+//   left: calc(50% - (var(--button-size) / 2));
+//   position: absolute;
+//   width: var(--button-size);
+// }
